@@ -12,7 +12,7 @@ public:
     void heap_sort(std::vector<int>& vec, int n);
     void bubble_sort(std::vector<int>& vec);
 
-    std::pair<int, int> num_of_comp_and_swap()
+    std::pair<long long, long long> num_of_comp_and_swap()
     {
         return {_comp_count, _swap_count};
     }
@@ -28,8 +28,8 @@ private:
     int hoare_partition(std::vector<int>& vec, int p, int r);
     void heapify(std::vector<int>& vec, int n, int i);
 
-    int _comp_count;
-    int _swap_count;
+    long long _comp_count;
+    long long _swap_count;
 };
 
 #endif
