@@ -21,7 +21,7 @@ public:
         _upper_bound = upper;
     }
 
-    void read_vec_size() 
+    void read_vec_size()
     {
         std::cout << "Podaj rozmiar tablicy: ";
         _n = f_read_number(0);
@@ -32,6 +32,8 @@ public:
 private:
     std::vector<int> generate_random_vec();
     std::vector<int> generate_reverse_sorted_vec();
+    std::vector<int> generate_sorted_vec();
+    std::vector<int> generate_partially_sorted_vec(float sorted_percent);
     int _n;
 
     int _lower_bound;
