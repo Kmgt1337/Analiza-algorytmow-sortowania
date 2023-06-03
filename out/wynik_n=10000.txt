@@ -1,0 +1,24 @@
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
+     Sortowanie babelkowe	   10000	tablica z losowymi liczbami	  50000905	  24903415	    724289
+Sortowanie szybkie lomuto	   10000	tablica z losowymi liczbami	    166227	     93611	         0
+ Sortowanie szybkie hoare	   10000	tablica z losowymi liczbami	    283226	     32576	         0
+Sortowanie przez kopcowanie	   10000	tablica z losowymi liczbami	    387804	    124268	     15652
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
+     Sortowanie babelkowe	   10000	tablica posortowana rosnaco	     10000	         0	         0
+Sortowanie szybkie lomuto	   10000	tablica posortowana rosnaco	  49995000	  50004999	   1017326
+ Sortowanie szybkie hoare	   10000	tablica posortowana rosnaco	  50034996	         0	    142265
+Sortowanie przez kopcowanie	   10000	tablica posortowana rosnaco	    410868	    131956	         0
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [us]	
+     Sortowanie babelkowe	   10000	tablica posortowana malejaco	  50004999	  49995000	    875607
+Sortowanie szybkie lomuto	   10000	tablica posortowana malejaco	  49995000	  25004999	    751436
+ Sortowanie szybkie hoare	   10000	tablica posortowana malejaco	  50049996	      5000	    140602
+Sortowanie przez kopcowanie	   10000	tablica posortowana malejaco	    365088	    116696	         0
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [us]	
+     Sortowanie babelkowe	   10000	10% elementow na zlej pozycji	  49377240	  20204972	    664139
+Sortowanie szybkie lomuto	   10000	10% elementow na zlej pozycji	    654150	    583079	     15620
+ Sortowanie szybkie hoare	   10000	10% elementow na zlej pozycji	   9757417	     29006	     31236
+Sortowanie przez kopcowanie	   10000	10% elementow na zlej pozycji	    390021	    125007	         0
+

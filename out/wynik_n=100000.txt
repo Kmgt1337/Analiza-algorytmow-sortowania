@@ -1,0 +1,24 @@
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ms]	
+     Sortowanie babelkowe	  100000	tablica z losowymi liczbami	5000008095	2509062699	    110902
+Sortowanie szybkie lomuto	  100000	tablica z losowymi liczbami	   2093855	   1173819	        31
+ Sortowanie szybkie hoare	  100000	tablica z losowymi liczbami	   3489395	    407184	        15
+Sortowanie przez kopcowanie	  100000	tablica z losowymi liczbami	   4874541	   1574847	        62
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ms]	
+     Sortowanie babelkowe	  100000	tablica posortowana rosnaco	    100000	         0	         2
+Sortowanie szybkie lomuto	  100000	tablica posortowana rosnaco	4999950000	5000049999	    149723
+ Sortowanie szybkie hoare	  100000	tablica posortowana rosnaco	5000349996	         0	     20182
+Sortowanie przez kopcowanie	  100000	tablica posortowana rosnaco	   5102562	   1650854	        46
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [ms]	
+     Sortowanie babelkowe	  100000	tablica posortowana malejaco	5000049999	4999950000	    129325
+Sortowanie szybkie lomuto	  100000	tablica posortowana malejaco	4999950000	2500049999	    109634
+ Sortowanie szybkie hoare	  100000	tablica posortowana malejaco	5000499996	     50000	     20177
+Sortowanie przez kopcowanie	  100000	tablica posortowana malejaco	   4642302	   1497434	        46
+
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [ms]	
+     Sortowanie babelkowe	  100000	10% elementow na zlej pozycji	4943949472	2030192096	     99419
+Sortowanie szybkie lomuto	  100000	10% elementow na zlej pozycji	  51900459	  51140213	      1065
+ Sortowanie szybkie hoare	  100000	10% elementow na zlej pozycji	 953193363	    358494	      4669
+Sortowanie przez kopcowanie	  100000	10% elementow na zlej pozycji	   4897383	   1582461	        50
+

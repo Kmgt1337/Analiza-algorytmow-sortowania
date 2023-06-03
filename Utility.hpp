@@ -113,7 +113,7 @@ private:
 struct cDataSet
 {
     std::string _method_name;
-    int _n;
+    unsigned int _n;
     std::string _arr_type;
     long long _comp_count;
     long long _swap_count;

@@ -81,8 +81,16 @@ int main()
             cDataSet set_heap = f_make_analysis(random_vec, c_tab, timer, "tablica z losowymi liczbami", SORT_ALG::HEAP);
 
             std::vector<cDataSet> data = {set_bubble, set_quick_lomuto, set_quick_hoare, set_heap};
-            f_save_results_to_file(path.c_str(), data, timer);
-            
+
+            try
+            {
+                f_save_results_to_file(path.c_str(), data, timer);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+            }
+                        
             break;
         }
 
@@ -95,7 +103,15 @@ int main()
             cDataSet set_heap = f_make_analysis(sorted_vec, c_tab, timer, "tablica posortowana rosnaco", SORT_ALG::HEAP);
 
             std::vector<cDataSet> data = {set_bubble, set_quick_lomuto, set_quick_hoare, set_heap};
-            f_save_results_to_file(path.c_str(), data, timer);
+
+            try
+            {
+                f_save_results_to_file(path.c_str(), data, timer);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+            }
             
             break;
         }
@@ -109,7 +125,15 @@ int main()
             cDataSet set_heap = f_make_analysis(reverse_sorted_vec, c_tab, timer, "tablica posortowana malejaco", SORT_ALG::HEAP);
 
             std::vector<cDataSet> data = {set_bubble, set_quick_lomuto, set_quick_hoare, set_heap};
-            f_save_results_to_file(path.c_str(), data, timer);
+            
+            try
+            {
+                f_save_results_to_file(path.c_str(), data, timer);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+            }
             
             break;
         }
@@ -123,7 +147,15 @@ int main()
             cDataSet set_heap = f_make_analysis(almost_sorted, c_tab, timer, "10% elementow na zlej pozycji", SORT_ALG::HEAP);
 
             std::vector<cDataSet> data = {set_bubble, set_quick_lomuto, set_quick_hoare, set_heap};
-            f_save_results_to_file(path.c_str(), data, timer);
+            
+            try
+            {
+                f_save_results_to_file(path.c_str(), data, timer);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+            }
             
             break;
         }

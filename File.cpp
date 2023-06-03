@@ -9,13 +9,13 @@ void f_save_results_to_file(const char* path, const std::vector<cDataSet>& data,
     ofstream file(path, ios::app);
     if(!file.good())
     {
-        //throw
+        throw problem_with_file("Problem z otwarciem pliku " + string(path));
     }
 
     file << setw(20) << "Nazwa metody sortowania\t";
-    file << setw(15) << "Dlugosc\t";
+    file << setw(20) << "Dlugosc\t";
     file << setw(data.at(0)._arr_type.size() / 2) << "Rodzaj tablicy\t";
-    file << setw(data.at(0)._arr_type.size() - (data.at(0)._arr_type.size() / 6)) << "Porownania\t";
+    file << setw(data.at(0)._arr_type.size()) << "Porownania\t";
     file << setw(15) << "Przestawienia\t";
     file << setw(10) << "Czas [" + timer.time_unit() << "]\t";
     file << std::endl;
