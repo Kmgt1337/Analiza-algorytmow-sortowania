@@ -24,11 +24,12 @@ int main()
 
     cTimer timer;
     int time_option;
-    std::cout << "\nPodaj jednostke czasu do mierzenia czasu sortowania (dla rozmiaru tablicy wiekszego od 10000 wybierz co najmniej milisekundy)\n";
-    std::cout << "1. mikrosekundy\n";
-    std::cout << "2. milisekundy\n";
-    std::cout << "3. sekundy\n";
-    std::cout << "4. minuty\n";
+    std::cout << "\nPodaj jednostke czasu do mierzenia czasu sortowania\n";
+    std::cout << "1. nanosekundy\n";
+    std::cout << "2. mikrosekundy\n";
+    std::cout << "3. milisekundy\n";
+    std::cout << "4. sekundy\n";
+    std::cout << "5. minuty\n";
     std::cout << "Podaj jednostke czasu: ";
     time_option = f_read_number<int>(1, 4);
 
@@ -36,23 +37,29 @@ int main()
     {
         case 1:
         {
-            timer.set_time_unit(cTimer::TIME::MICROSECONDS);
+            timer.set_time_unit(cTimer::TIME::NANOSECONDS);
             break;
         }
 
         case 2:
         {
-            timer.set_time_unit(cTimer::TIME::MILISECONDS);
+            timer.set_time_unit(cTimer::TIME::MICROSECONDS);
             break;
         }
 
         case 3:
         {
-            timer.set_time_unit(cTimer::TIME::SECONDS);
+            timer.set_time_unit(cTimer::TIME::MILISECONDS);
             break;
         }
 
         case 4:
+        {
+            timer.set_time_unit(cTimer::TIME::SECONDS);
+            break;
+        }
+
+        case 5:
         {
             timer.set_time_unit(cTimer::TIME::MINUTES);
             break;

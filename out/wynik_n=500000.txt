@@ -1,0 +1,6 @@
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ms]	
+     Sortowanie babelkowe	  500000	tablica z losowymi liczbami	125000211497	62515476327	   2768626
+Sortowanie szybkie lomuto	  500000	tablica z losowymi liczbami	  11543322	   6427206	       229
+ Sortowanie szybkie hoare	  500000	tablica z losowymi liczbami	  20081873	   2296972	       128
+Sortowanie przez kopcowanie	  500000	tablica z losowymi liczbami	  27823662	   9024554	       315
+

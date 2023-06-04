@@ -1,23 +1,23 @@
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ns]	
      Sortowanie babelkowe	     100	tablica z losowymi liczbami	      4959	      2430	         0
 Sortowanie szybkie lomuto	     100	tablica z losowymi liczbami	       735	       450	         0
  Sortowanie szybkie hoare	     100	tablica z losowymi liczbami	      1516	       180	         0
 Sortowanie przez kopcowanie	     100	tablica z losowymi liczbami	      1878	       576	         0
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ns]	
      Sortowanie babelkowe	     100	tablica posortowana rosnaco	       100	         0	         0
-Sortowanie szybkie lomuto	     100	tablica posortowana rosnaco	      4950	      5049	         0
+Sortowanie szybkie lomuto	     100	tablica posortowana rosnaco	      4950	      5049	    998000
  Sortowanie szybkie hoare	     100	tablica posortowana rosnaco	      5346	         0	         0
 Sortowanie przez kopcowanie	     100	tablica posortowana rosnaco	      2070	       640	         0
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [us]	
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [ns]	
      Sortowanie babelkowe	     100	tablica posortowana malejaco	      5049	      4950	         0
-Sortowanie szybkie lomuto	     100	tablica posortowana malejaco	      4950	      2549	         0
+Sortowanie szybkie lomuto	     100	tablica posortowana malejaco	      4950	      2549	    997000
  Sortowanie szybkie hoare	     100	tablica posortowana malejaco	      5496	        50	         0
 Sortowanie przez kopcowanie	     100	tablica posortowana malejaco	      1698	       516	         0
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [us]	
-     Sortowanie babelkowe	     100	10% elementow na zlej pozycji	      4672	      1996	         0
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [ns]	
+     Sortowanie babelkowe	     100	10% elementow na zlej pozycji	      4672	      1996	    989000
 Sortowanie szybkie lomuto	     100	10% elementow na zlej pozycji	       652	       499	         0
  Sortowanie szybkie hoare	     100	10% elementow na zlej pozycji	      2314	       152	         0
 Sortowanie przez kopcowanie	     100	10% elementow na zlej pozycji	      1920	       590	         0

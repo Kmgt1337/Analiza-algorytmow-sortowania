@@ -11,6 +11,7 @@ class cTimer
 public:
     enum class TIME
     {
+        NANOSECONDS,
         MICROSECONDS,
         MILISECONDS,
         SECONDS,
@@ -19,12 +20,12 @@ public:
 
     void start()
     {
-        _start = std::chrono::high_resolution_clock::now();
+        _start = std::chrono::steady_clock::now();
     }
 
     void stop()
     {
-        _end = std::chrono::high_resolution_clock::now();
+        _end = std::chrono::steady_clock::now();
     }
 
     void set_time_unit(TIME time)
@@ -36,6 +37,11 @@ public:
     {
         switch(_time_unit)
         {
+            case TIME::NANOSECONDS:
+            {
+                return "ns";
+            }
+
             case TIME::MICROSECONDS:
             {
                 return "us";
@@ -62,6 +68,11 @@ public:
     {
         switch(_time_unit)
         {
+            case TIME::NANOSECONDS:
+            {
+                return time_in_nanoseconds();
+            }
+
             case TIME::MICROSECONDS:
             {
                 return time_in_microseconds();
@@ -82,6 +93,11 @@ public:
                 return time_in_minutes();
             }
         }
+    }
+
+    long long time_in_nanoseconds()
+    {
+        return std::chrono::duration_cast<std::chrono::nanoseconds>(_end - _start).count();
     }
 
     long long time_in_seconds()
@@ -106,8 +122,8 @@ public:
 
 private:
     TIME _time_unit;
-    std::chrono::high_resolution_clock::time_point _start;
-    std::chrono::high_resolution_clock::time_point _end;
+    std::chrono::steady_clock::time_point _start;
+    std::chrono::steady_clock::time_point _end;
 };
 
 struct cDataSet

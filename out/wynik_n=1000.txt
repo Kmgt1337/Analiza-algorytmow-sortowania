@@ -1,24 +1,24 @@
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
-     Sortowanie babelkowe	    1000	tablica z losowymi liczbami	    499870	    252610	     19829
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ns]	
+     Sortowanie babelkowe	    1000	tablica z losowymi liczbami	    499870	    252610	  12963000
 Sortowanie szybkie lomuto	    1000	tablica z losowymi liczbami	     10474	      6274	         0
- Sortowanie szybkie hoare	    1000	tablica z losowymi liczbami	     21668	      2495	       998
+ Sortowanie szybkie hoare	    1000	tablica z losowymi liczbami	     21668	      2495	         0
 Sortowanie przez kopcowanie	    1000	tablica z losowymi liczbami	     28791	      9097	         0
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [us]	
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                Porownania	 Przestawienia	  Czas [ns]	
      Sortowanie babelkowe	    1000	tablica posortowana rosnaco	      1000	         0	         0
-Sortowanie szybkie lomuto	    1000	tablica posortowana rosnaco	    499500	    500499	     16351
- Sortowanie szybkie hoare	    1000	tablica posortowana rosnaco	    503496	         0	       997
-Sortowanie przez kopcowanie	    1000	tablica posortowana rosnaco	     30624	      9708	         0
+Sortowanie szybkie lomuto	    1000	tablica posortowana rosnaco	    499500	    500499	  13971000
+ Sortowanie szybkie hoare	    1000	tablica posortowana rosnaco	    503496	         0	   2007000
+Sortowanie przez kopcowanie	    1000	tablica posortowana rosnaco	     30624	      9708	    999000
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [us]	
-     Sortowanie babelkowe	    1000	tablica posortowana malejaco	    500499	    499500	     25283
-Sortowanie szybkie lomuto	    1000	tablica posortowana malejaco	    499500	    250499	      6972
- Sortowanie szybkie hoare	    1000	tablica posortowana malejaco	    504996	       500	      2008
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                 Porownania	 Przestawienia	  Czas [ns]	
+     Sortowanie babelkowe	    1000	tablica posortowana malejaco	    500499	    499500	  13007000
+Sortowanie szybkie lomuto	    1000	tablica posortowana malejaco	    499500	    250499	   7965000
+ Sortowanie szybkie hoare	    1000	tablica posortowana malejaco	    504996	       500	    999000
 Sortowanie przez kopcowanie	    1000	tablica posortowana malejaco	     26448	      8316	         0
 
-Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [us]	
-     Sortowanie babelkowe	    1000	10% elementow na zlej pozycji	    490347	    208001	     10011
+Nazwa metody sortowania	            Dlugosc	Rodzaj tablicy	                  Porownania	 Przestawienia	  Czas [ns]	
+     Sortowanie babelkowe	    1000	10% elementow na zlej pozycji	    490347	    208001	  10974000
 Sortowanie szybkie lomuto	    1000	10% elementow na zlej pozycji	     15771	     11545	         0
- Sortowanie szybkie hoare	    1000	10% elementow na zlej pozycji	    114596	      2224	      1000
+ Sortowanie szybkie hoare	    1000	10% elementow na zlej pozycji	    114596	      2224	   1046000
 Sortowanie przez kopcowanie	    1000	10% elementow na zlej pozycji	     28992	      9164	         0
 
