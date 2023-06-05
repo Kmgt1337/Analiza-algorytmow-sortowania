@@ -1,0 +1,69 @@
+1. Tablica z elementami ustawionymi losowo.
+
+Najlepszym algorytmem do sortowania w tym przypadku jest sorotwanie szybkie z algorytmem podziału hoare. Wykonuje się wtedy najmniej
+operacji przestawienia co skutkuje najszybszym czasem wykonania algorytmu.
+
+Sortowanie szybkie z algotytmem podziału lomuto oraz sortowanie przez kopcowanie również są bardzo szybkie, 
+choć nieco wolniejsze od wersji hoare. 
+
+Najgorszym algorytmem jest sortowanie bąbelkowe (wariant wahadłowy). Liczba operacji jest gigantyczna, a czas wykonania bardzo duży.
+
+2. Tablica z elementami posortowanymi rosnąco.
+
+Najlepszym algorytmem okazało się sortowanie bąbelkowe (wariant wahadłowy). Liczba operacji równa się rozmiarowi tablicy, co daje złożoność
+O(n). Jest to jednak jedyny przypadek gdy ten algorytm jest tak szybki, w pozostałych przypadkach jest bardzo wolny.
+
+Najgorszym algorytmem okazało się sortowanie szybkie w wersji lomuto. Gigantyczna liczba operacji związana jest z wywołanami rekurencyjnymi.
+W testowanych przypadkach problemem okazywała się również pamięć. Przy dużych rozmiarach tablic dochodziło do przepełnienia stosu, co zmusiło do
+kompilacji z flagą "Wl,--stack" aby zwiększyć rozmiar stosu. 
+
+Sortowanie szybkie w wersji hoare jest wolne, choć szybsze od wersji lomuto. Związane to jest z całkowitym brakiem operacji przestawień. 
+Nie powinno w tym przypadku być problemów z pamięcią. 
+
+Bardzo szybkim algorytmem okazało się sortowanie przez kopcowanie. Liczba operacji jest o rzędy wielkości mniejsza od sortowań szybkich.
+
+3. Tablica z elementami posortowanymi malejąco.
+
+Sortowanie bąbelkowe (wariant wahadłowy) było bardzo wolne a ilość operacji gigantyczna.
+
+Sortowanie szybkie w wersji lomuto również było dosyć wolne. W zasadzie niewiele szybsze od sortowania bąbelkowego.
+
+Sortowanie szybkie w wersji hoare było średnio szybkie. Liczba operacji przestawienia była dużo mniejsza od wersji lomuto.
+
+Sortowanie przez kopcowanie okazało się najszybsze, z bardo małą liczbą wszystkich operacji.
+
+4. Tablica prawie posortowana (10% elementow na zlej pozycji).
+
+Sortowanie bąbelkowe (wariant wahadłowy) było bardzo wolne a ilość operacji gigantyczna.
+
+Sortowanie szybkie w wersji lomuto było dość szybkie.
+
+Sortowanie szybkie w wersji hoare było średnio szybkie. Wolniejsze od wersji lomuto.
+
+Najszybszym algorytmem było sortowanie przez kopcowanie. 
+
+
+ZLOZONOSCI:
+
+Sortowanie babelkowe (wariant wahadlowy):
+Czasowa: O(n^2) pesymistyczna, O(n^2) srednia, O(n) optymistyczna
+Pamieciowa: O(1) pesymistyczna
+
+Sortowanie szybkie lomuto:
+Czasowa: O(n^2) pesymistyczna, O(nlogn) srednia, O(nlogn) optymistyczna
+Pamieciowa: O(n) pesymistyczna dodatkowo
+
+Sortowanie szybkie hoare:
+Czasowa: O(n^2) pesymistyczna, O(nlogn) srednia, O(n) optymistyczna
+Pamieciowa: O(logn) pesymistyczna dodatkowo
+
+Sortowanie przez kopcowanie:
+Czasowa: O(nlogn) pesymistyczna, O(nlogn) srednia, O(n) optymistyczna
+pamieciowa: O(n) pesymistyczna lacznie, O(1) dodatkowo
+
+
+Jakiego algorytmu użyć do jakiej tablicy?
+Do tablicy losowej: sortowanie szybkie hoare. 
+Do tablicy posortowanej rosnąco: sortowanie bąbelkowe (wariant wahadłowy).
+Do tablicy posortowanej malejąco: sortowanie przez kopcowanie. 
+Do tablicy prawie posortowanej: sortowanie przez kopcowanie lub sortowanei szybkie lomuto (chyba jednak lepiej przez kopcowanie)
