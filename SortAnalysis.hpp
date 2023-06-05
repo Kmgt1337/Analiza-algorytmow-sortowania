@@ -31,4 +31,4 @@ enum class SORT_ALG
 */
 cDataSet f_make_analysis(std::vector<int> vec, cTablica sort, cTimer timer, std::string arr_type, SORT_ALG alg);
 
-#endif
+#endif // SORTANALYSIS_HPP

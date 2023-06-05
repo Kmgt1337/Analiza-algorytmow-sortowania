@@ -37,4 +37,4 @@ private:
 */
 void f_save_results_to_file(const char* path, const std::vector<cDataSet>& data, cTimer timer);
 
-#endif
+#endif // FILE_HPP
